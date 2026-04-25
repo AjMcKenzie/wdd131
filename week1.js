@@ -1,11 +1,12 @@
-
 const PI = 3.14;
 let radius = 3;
-                  
+console.log(Number((PI * radius * radius).toFixed(2)));
 
 const one = 1;
 const two = '2';
-                    
+console.log(one + two + 5 + 6);
+console.log(Number(two));
+console.log(one + Number(two));
 
 
 let course = "CSE131"; //global scope
