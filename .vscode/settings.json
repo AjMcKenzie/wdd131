@@ -1,3 +1,6 @@
 {
-    "livePreview.defaultPreviewPath": "/ponder/meta-css.html"
+    "livePreview.defaultPreviewPath": "/ponder/meta-css.html",
+    "cSpell.words": [
+        "byui"
+    ]
 }
