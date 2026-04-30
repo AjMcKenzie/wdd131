@@ -1,12 +1,3 @@
-let selectElem = document.getElementById('webdevlist');
-selectElem.addEventListener('change', function(){
-    let codeValue = selectElem.value;
-    console.log(codeValue);
-})
-
-/*
-W02 Prove: Mission Statement part 2
-
 let selectElem = document.querySelector('select');
 let logo = document.querySelector('img');
 
@@ -20,19 +11,16 @@ function changeTheme() {
         logo.src = 'byui-logo-white.png';
         body.style.backgroundColor = '#323332';
         body.style.color = 'white';
-    } 
-    else if (current == 'darker') {
+    } else if (current == 'darker') {
         // added in a darker theme option for fun to try out more changes to the colors and logo 
         logo.src = 'byui-logo-white.png';
         body.style.backgroundColor = 'black';
         body.style.color = 'white';
-    }
-    else {
+    } else {
         // code for changes to colors and logo
         logo.src = 'byui-logo-blue.png';
         body.style.backgroundColor = 'white';
         body.style.color = 'black';
     }
-}
-*/       
+}      
                     

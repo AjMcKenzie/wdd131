@@ -72,6 +72,7 @@
             </ul>
         </div>
     </div>
+     
     <script> // defer only works if the script is in the head, and it is in an external file.
         // Anytime we want to change the DOM, use document.
         console.log(document);
@@ -95,9 +96,7 @@
         firstList.className = "new-list";
 
         // Selects all the ul, [1] means the second in the array
-        document.querySelectorAll("ul")[1].style.backgroundColor = "pink";
-
-
+        document.querySelectorAll("ul")[1].style.backgroundColor = "pink";     
     </script>
 </body>
 </html>
