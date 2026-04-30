@@ -1,3 +1,11 @@
+let selectElem = document.getElementById('webdevlist');
+selectElem.addEventListener('change', function(){
+    let codeValue = selectElem.value;
+    console.log(codeValue);
+})
+
+/*
+W02 Prove: Mission Statement part 2
 
 let selectElem = document.querySelector('select');
 let logo = document.querySelector('img');
@@ -25,5 +33,6 @@ function changeTheme() {
         body.style.backgroundColor = 'white';
         body.style.color = 'black';
     }
-}           
+}
+*/       
                     
