@@ -1,104 +1,94 @@
-
-/* @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"); */
-
-/* * {  
-    margin: 0;
-} */
-
 body {
-  font-family: Roboto, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #CCCDCD;
 }
-header,
-main,
-footer {
-  max-width: 1000px;
-  margin: 1rem auto;
-  border: 1px solid #ccc;
-  padding: 1rem;
-  background-color: #CCCDCD;
-}
+
 header {
     background-color: #2A81E2;
+    padding: 1rem;
+    text-align: center;
 }
 
 h1 {
     color: white;
-    text-align: center;
+    margin: 0 0 10px 0;
 }
 
-h2 {
- text-align: center;
-}
-
-section {
-  padding: 20px;
-  /* background-color: white;
-  margin: 1em;
-  border: 1px solid #ccc; */
-}
-
-img {
-  width: 300px;
-  height: 300px;
-  object-fit: cover;
-  box-shadow: 0 4px 8px white; 
-}
-
-nav a {
-    padding: 20px;
-    color: black;
+nav {
     display: none;
-}
-nav a:hover {
-    text-decoration: none;
-    color: #616061;
-}
-nav{
-    text-align: right;
 }
 
 .menu {
-    cursor: pointer;
+    background: none;
     border: none;
     color: white;
-    background-color: transparent;
-}
-
-
-footer {
-    text-align: center;
 }
 
 main {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+h2 {
+    text-align: center;
+}
+
+.gallery {
     display: grid;
     grid-template-columns: 1fr;
-    
+    gap: 40px;
+    justify-items: center;
 }
 
-/* @media screen and (min-width: 500px) and (max-width: 1199px) {
-    main {
+img {
+    width: 300px;           
+    max-width: 300px;      
+    object-fit: cover;     
+    box-shadow: 5px 5px 15px black;
+}
+
+.border {
+    border: 5px solid white;
+}
+
+footer {
+    background-color: #2A81E2;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 20px;
+}
+
+@media screen and (min-width: 600px) {
+    .gallery {
         grid-template-columns: 1fr 1fr;
-    }
-
-    nav a{
-        display: inline;
-    }
-
-    .menu-btn{
-        display: none;
+        justify-self: center;
     }
 }
 
-@media screen and (min-width: 1200px) {
-    main {
+@media screen and (min-width: 1000px) {
+    .menu {
+        display: none; 
+    }
+
+    nav {
+        display: block; 
+    }
+
+    nav ul {
+        list-style: none;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    nav a {
+        color: white;
+    }
+
+    .gallery {
         grid-template-columns: 1fr 1fr 1fr;
     }
-
-    nav a{
-        display: inline;
-    }
-
-    .menu-btn{
-        display: none;
-    }
-} */
+}
