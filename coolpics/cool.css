@@ -31,8 +31,8 @@ h2 {
 }
 
 section {
-  /* padding: 20px;
-  background-color: white;
+  padding: 20px;
+  /* background-color: white;
   margin: 1em;
   border: 1px solid #ccc; */
 }
@@ -41,7 +41,7 @@ img {
   width: 300px;
   height: 300px;
   object-fit: cover;
-  box-shadow: 5px 5px 5px 5px white; 
+  box-shadow: 0 4px 8px white; 
 }
 
 nav a {
@@ -72,6 +72,7 @@ footer {
 main {
     display: grid;
     grid-template-columns: 1fr;
+    
 }
 
 /* @media screen and (min-width: 500px) and (max-width: 1199px) {
