@@ -58,9 +58,7 @@ footer {
                 background-color 0.5s ease-in-out;
 }
 
-.change div{
-    background-color: red;
-}
+
 .change .bar1 {
   transform: translate(0, 9px) rotate(-45deg);
 }
