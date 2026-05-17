@@ -13,5 +13,6 @@ function handleMenuButtonClick(event) {
     let nav = document.querySelector("nav");
     // toggle the .hide class on/off
     nav.classList.toggle("hide");
+
     menuButton.classList.toggle("change");
 }

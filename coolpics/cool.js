@@ -9,6 +9,10 @@ function openModal(event) {
     console.log(event.target.src);
     let imageSrc = event.target.src;
     modalImage.src = imageSrc.replace('sm', 'full');
+    
+    let imageAlt = event.target.alt;
+    modalImage.alt = `Full Size ${event.target.alt}`;
+    
     modal.showModal();
 }
 
@@ -21,3 +25,12 @@ modal.addEventListener('click', (event) => {
         modal.close();
     }
 });
+
+let menuButton = document.getElementsByClassName("menu-btn")[0];
+
+menuButton.addEventListener("click", handleMenuButtonClick);
+
+function handleMenuButtonClick(event) {
+    let nav = document.querySelector("nav");
+    nav.classList.toggle("hide");
+}
