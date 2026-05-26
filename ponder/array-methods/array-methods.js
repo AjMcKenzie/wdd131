@@ -53,6 +53,20 @@ console.log(filteredNames);
 
 
 // .reduce()
+let averageAge = age.reduce((total, current) => {
+    return total + current;
+}) / age.length;
+
+console.log(averageAge);
 
 
 // .indexOf()
+let index = names.indexOf("Bob");
+console.log(index);
+
+
+// Template Literals
+let firstName = "Alice";
+let lastName = "Smith";
+let fullName = `${firstName} ${lastName}`;
+console.log(fullName);
