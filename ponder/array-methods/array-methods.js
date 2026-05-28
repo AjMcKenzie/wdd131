@@ -68,5 +68,5 @@ console.log(index);
 // Template Literals
 let firstName = "Alice";
 let lastName = "Smith";
-let fullName = `${firstName} ${lastName}`;
+let fullName = `Full name: ${firstName} ${lastName}`;
 console.log(fullName);
