@@ -59,4 +59,3 @@ articles.forEach(article => {
 
     document.getElementById("book-list").innerHTML += card;
 });
-                
