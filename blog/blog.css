@@ -40,7 +40,7 @@ h1 {
     text-align: right;
     margin-bottom: 30px;
     border-top: 2px solid #EDC798;
-    padding: 0 20px;
+    padding: 0 1em 0 0;
 }
 
 .post-content h2 {
@@ -48,15 +48,17 @@ h1 {
     font-family: Georgia, serif;
     text-align: center;
     margin-bottom: 20px;
+    padding: 0 5px 0;
 }
 
 .post-content img {
     display: block;
-    margin: 0 auto 20px auto;
+    margin: auto;
 }
 
-.book-description {
+#desc {
     text-align: left;
+    padding-left: 10px;
 }
 
 footer {
@@ -70,14 +72,10 @@ footer {
 
     .blog-post {
         display: grid;
-        grid-template-columns: flex;
-        gap: 30px;
-        align-items: start;
     }
     
     .post-details {
         padding-right: 20px;
-        margin-bottom: 0;
         grid-column: 1/2;
         border-top: none;
     }
@@ -91,14 +89,13 @@ footer {
     .post-content h2 {
         text-align: left;
         margin-top: 0;
-        padding-left: 20px;
     }
 
     .post-content img {
-     justify-content: center;
+        margin-left: 150px;
     }
 
-    .book-description {
+    #desc {
         max-width: 500px;
     }
 }
