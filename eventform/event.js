@@ -28,16 +28,27 @@ function updateNotesField() {
     if(value === "student") {
         studentIdContainer.hidden = false;
         studentId.required = true;
+
+        accessCodeContainer.hidden = true;
+        accessCode.required = false;
+        accessCode.value = "";
+        
     } 
     else if (value === "guest") {
         accessCodeContainer.hidden = false;
         accessCode.required = true;
+
+        studentIdContainer.hidden = true;
+        studentId.required = false;
+        studentId.value = "";
     } 
     else {
         studentIdContainer.hidden = true;
         accessCodeContainer.hidden = true;
         studentId.required = false;
         accessCode.required = false;
+        studentId.value = "";
+        accessCode.value = "";
     }
 
 }
