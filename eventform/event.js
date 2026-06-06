@@ -63,7 +63,6 @@ function isPastDate(value) {
   return chosen < today;
 }
 
-
 form.addEventListener("submit", function (event) {
     event.preventDefault();
     output.textContent = "";
