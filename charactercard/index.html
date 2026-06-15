@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="character card">
+    <meta name="author" content="Andrew McKenzie">
+    <title>Character Card</title>
+    <link rel="icon" href="favicon.ico">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link rel="stylesheet" href="card.css">
+    <script src="card.js" defer></script>
+</head>
+<body>
+
+    <!-- Open Graph (Facebook, LinkedIn, etc.) -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Character Card">
+    <meta property="og:description" content="This is Snortleblat, the Swamp Beast Diplomat. View stats, attack and level up!">
+    <meta property="og:url" content="https://ajmckenzie.github.io/wdd131/charactercard">
+    <meta property="og:image" content="https://ajmckenzie.github.io/wdd131/charactercard/images/snortleblat.png">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="Character Card">
+    <meta name="twitter:title" content="Character Card">
+    <meta name="twitter:description" content="This is Snortleblat, the Swamp Beast Diplomat. View stats, attack and level up!">
+    <meta name="twitter:image" content="https://ajmckenzie.github.io/wdd131/charactercard/images/snortleblat.png">
+
+    <!-- One favicon (ICO works everywhere) -->
+    <link rel="icon" href="/favicon.ico">
+
+    <!-- One Apple Touch Icon (iOS home screen) -->
+    <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+
+</head>
+<body>
+    <main>
+    <div class="card">
+        <img class="image" src="#" alt="#">
+        <div class="name"></div>
+        <div class="stats">
+            <p><strong>Class:</strong> <span id="class"></span></p>
+            <p><strong>Level:</strong> <span id="level"></span></p>
+            <p><strong>Health:</strong> <span id="health"></span></p>
+        </div>
+
+        <div class="buttons">
+            <button id='attacked'>Attacked</button>
+            <button id='levelup'>Level Up</button>
+        </div>
+    </div>
+  </main>
+</body>
+</html>
