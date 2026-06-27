@@ -291,7 +291,9 @@ function searchRecipes() {
 
 	const filteredRecipes = recipes.filter(recipe => {
 		return recipe.name.toLowerCase().includes(userInput) ||
-			   recipe.description.toLowerCase().includes(userInput);
+			   recipe.description.toLowerCase().includes(userInput) ||
+			   recipe.tags.some(tag => tag.toLowerCase().includes(userInput)) ||
+			   recipe.rating.toString() === userInput;
 	});
 
 	filteredRecipes.sort(sortRecipesByRating);
@@ -373,4 +375,19 @@ function showRecipes(recipeList){
     console.log(html);
     recipeContainer.innerHTML = html;
 }
+
+
+function getRandomRecipe(recipeArray) {
+	const randomIndex = Math.floor(Math.random() * recipeArray.length);
+	return recipeArray[randomIndex];
+}
+
+function init() {
+	const recipe = getRandomRecipe(recipes);
+	showRecipes(recipe);
+}
+
+
+init();
+
 
