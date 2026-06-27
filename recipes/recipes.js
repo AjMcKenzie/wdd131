@@ -387,7 +387,6 @@ function init() {
 	showRecipes(recipe);
 }
 
-
 init();
 
 
