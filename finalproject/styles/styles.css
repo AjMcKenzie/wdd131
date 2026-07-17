@@ -1,14 +1,12 @@
 body {
     background-color: #caf0f8;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
-#welcome {
-    text-align: center;
-    margin: 2rem auto;
-    max-width: 800px;
-    padding: 1rem;
-    background-color: #90e0ef;
-    border-radius: 8px;
+main {
+    flex: 1;
 }
 
 #title {
@@ -20,12 +18,29 @@ body {
     background-color: #03045e
 }
 
+.welcome {
+    margin: 2rem auto;
+    padding: 1rem;
+    background-color: #90e0ef;
+    border-radius: 8px;
+}
+
+.welcome p {
+    text-align: left;
+}
+
+main p{
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+
 #title h1 {
     margin: 0;
     color: #fff;
 }
 
-h2 {
+h2, h3 {
     text-align: center;
     margin-top: 2rem;
 }
@@ -37,62 +52,6 @@ h2 {
     height: auto;
 }
 
-#buttons {
-    display: grid;
-    grid-template-columns: repeat(3, auto);
-    justify-content: center;
-    gap: 1rem;
-    margin-top: 2rem;
-}
-
-#random {
-    grid-column: 2 / 3;
-}
-
-#prev, #flip, #next,#random {
-    background-color: #0077b6;
-    color: #fff;
-    border: none;
-    width: 7rem;
-    height: 2.5rem;
-    padding: 0.5rem 1rem;
-    border-radius: 4px;
-    cursor: pointer;
-}
-
-#prev:hover, #flip:hover, #next:hover,#random:hover {
-    background-color: #023e8a;
-}
-
-#card {
-    background-color: white;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    max-width: 600px;
-    height: 400px;
-    margin: 20px auto;
-
-}
-
-#content {
-    display: flex;
-    height: 100%;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    font-size: 2rem;
-    white-space: pre-wrap;
-}
-
-#chapterPeg {
-    display: flex;
-    height: 100%;
-    align-items: center;
-    font-size: 5rem;
-    display: hidden;
-}
 nav {
     gap: 1rem;
     padding: 1rem;
@@ -145,6 +104,131 @@ nav a.active {
   transform: translate(0, -9px) rotate(45deg);
 }
 
+
+#card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 300px;
+    height: 500px;
+    margin: 20px auto;
+    transition: transform .40s ease;
+}
+
+#content {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 2rem;
+    white-space: pre-wrap;
+    transition: transform .40s ease; 
+}
+
+#card.flipped {
+    transform: rotateY(180deg);
+}
+
+#content.unflipped {
+    transform: rotateY(180deg);
+}
+
+#chapterPeg {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    font-size: 5rem;
+    display: hidden;
+}
+
+#buttons {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+#random {
+    grid-column: 2 / 3;
+}
+
+#buttons button {
+    background-color: #0077b6;
+    color: #fff;
+    border: none;
+    width: 7rem;
+    height: 2.5rem;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#buttons button:hover {
+    background-color: #023e8a;
+}
+
+hr {
+    margin-top: 2rem;
+    border: none;
+    border-top: 1px solid #ccc;
+}
+
+#numbers
+{
+    display: grid;
+    grid-template-columns: repeat(7, auto);
+    width: fit-content;
+    margin: 2rem auto 0;
+    align-items: center;
+}
+
+#numbers button {
+    background-color: #0077b6;
+    color: #fff;
+    cursor: pointer;
+}
+
+#numbers button:hover {
+    background-color: #023e8a;
+}
+
+#BOMbooks {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+#BOMbooks button {
+    background-color: #0077b6;
+    color: #fff;
+    border: none;
+    width: 7rem;
+    height: 3rem;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#BOMbooks button:hover {
+    background-color: #023e8a;
+}
+
+footer {
+    text-align: center;
+    margin-top: 2rem;
+    padding: 1rem;
+    background-color: #03045e;
+    color: #fff;
+}
+
+
+
 @media screen and (min-width: 600px) {
     .menu-btn {
         display: none;
@@ -162,6 +246,15 @@ nav a.active {
 
     nav a:hover {
         background-color: #023e8a;
+    }
+
+    #card{
+        max-width: 600px;
+        height: 400px;  
+    }
+
+    #BOMbooks {
+        grid-template-columns: repeat(5, auto);
     }
 
 }
