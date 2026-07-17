@@ -2,31 +2,6 @@ body {
     background-color: #caf0f8;
 }
 
-nav {
-    display: flex;
-    justify-content: space-evenly;
-    gap: 1rem;
-    padding: 1rem;
-    background-color: #03045e;
-    color: #fff;
-}
-
-nav a {
-    color: #fff;
-    text-decoration: none;
-    padding: 0.5rem 1rem;
-    border-radius: 4px;
-}
-
-nav a:hover {
-    background-color: #023e8a;
-}
-
-nav a.active {
-    background-color: #0077b6;
-    box-shadow: inset 0 -3px 0 #caf0f8;
-}
-
 #welcome {
     text-align: center;
     margin: 2rem auto;
@@ -87,7 +62,6 @@ h2 {
     background-color: #023e8a;
 }
 
-
 #card {
     background-color: white;
     border-radius: 8px;
@@ -99,21 +73,93 @@ h2 {
 
 }
 
-
 #content {
     display: flex;
     height: 100%;
+    width: 100%;
     justify-content: center;
     align-items: center;
+    text-align: center;
     font-size: 2rem;
+    white-space: pre-wrap;
 }
-
 
 #chapterPeg {
     display: flex;
     height: 100%;
-    justify-content: center;
     align-items: center;
     font-size: 5rem;
     display: hidden;
+}
+nav {
+    gap: 1rem;
+    padding: 1rem;
+    color: #fff;
+}
+
+nav a {
+    padding: 20px;
+    color: #fff;
+    background-color: #03045e;
+    text-decoration: none;
+    margin-top: 0.5rem;
+    display: none;
+}
+
+nav a.active {
+    background-color: #0077b6;
+    box-shadow: inset 0 -3px 0 #02d1fa;
+}
+
+.menu-btn {
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+}
+
+.bar1, .bar2, .bar3 {
+    width: 30px;
+    height: 4px;
+    background-color: black;
+    margin: 5px 0;
+}
+
+.hide a{
+    display: inline-block;
+}
+
+.menu-btn div{
+    transition: transform 0.5s ease-in-out, 
+                opacity 0.5s ease-in-out,
+                background-color 0.5s ease-in-out;
+}
+
+.change .bar1 {
+  transform: translate(0, 9px) rotate(-45deg);
+}
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+  transform: translate(0, -9px) rotate(45deg);
+}
+
+@media screen and (min-width: 600px) {
+    .menu-btn {
+        display: none;
+    }
+    nav a {
+        padding: 0.5rem 1rem;
+        border-radius: 4px;
+        display: inline;
+    }
+    nav {
+        display: flex;
+        justify-content: space-evenly;
+        background-color: #03045e;
+    }
+
+    nav a:hover {
+        background-color: #023e8a;
+    }
+
 }
