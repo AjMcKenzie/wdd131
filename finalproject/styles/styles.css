@@ -114,6 +114,7 @@ nav a.active {
     height: 500px;
     margin: 20px auto;
     transition: transform .40s ease;
+    cursor: pointer;
 }
 
 #content {
